@@ -51,6 +51,10 @@ for i in mode_start:
 
                 entry = [mode_hr, mode_num, mode_oct, mode_hex, mode_hex_minus_prefix]
                 csv_list.append(entry)
-with open('unix_file_permissions.csv', 'w') as csv_file:
-    writer = csv.writer(csv_file)
-    writer.writerows(csv_list)
+try:
+    with open('unix_file_permissions.csv', 'w') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerows(csv_list)
+    print('File \'unix_file_permissions.csv\' written.')
+except:
+    print("[ERROR] Could not write csv.")
