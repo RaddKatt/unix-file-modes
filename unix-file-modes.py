@@ -1,5 +1,5 @@
 # unix-file-modes.py
-# A quick and dirty script to build a csv of all possible linux file permission modes
+# A quick and dirty script to build a csv of all possible *nux file permission modes
 
 mode_start = [0, 1, 2, 4]
 for i in mode_start:
