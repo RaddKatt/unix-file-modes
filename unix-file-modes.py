@@ -45,7 +45,7 @@ for i in mode_start:
                 if mode_oct[1] == '4':
                     mode_hr[2] = 's'
                 mode_hr = ''.join(mode_hr)
-                mode_num = mode_oct[1:]
+                mode_num = str(int(mode_oct))
                 mode_hex = hex(int(mode_num, 8))
                 mode_hex_minus_prefix = str(mode_hex)[2:]
 
