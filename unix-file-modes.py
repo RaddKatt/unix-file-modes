@@ -25,7 +25,7 @@ for i in mode_start:
                         perms = '-wx'
                         mode_hr[mode_index] = perms
                     elif mode_oct[m] == '4':
-                        perms = '-r-'
+                        perms = 'r--'
                         mode_hr[mode_index] = perms
                     elif mode_oct[m] == '5':
                         perms = 'r-x'
